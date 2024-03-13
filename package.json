@@ -3,6 +3,7 @@
   "description": "The official website of Engineering4.0 Club at Univeristy of Windsor.",
   "private": true,
   "version": "0.0.1",
+  "homepage": "https://engineering4-0.github.io/engg4.0website/",
   "type": "module",
   "scripts": {
     "dev": "bunx --bun vite",
