@@ -22,8 +22,14 @@ export default function Hero() {
           University of Windsor!
         </p>
         <div className="pt-10 flex gap-4 justify-center lg:justify-start">
-          <Button color="primary">Join Us</Button>
-          <Button color="secondary" variant="bordered">
+          <Button className="text-lg px-5 py-4" color="primary">
+            Join Us
+          </Button>
+          <Button
+            className="text-lg px-5 py-4"
+            color="secondary"
+            variant="bordered"
+          >
             Learn More
           </Button>
         </div>
