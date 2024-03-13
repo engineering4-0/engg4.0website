@@ -15,6 +15,17 @@ module.exports = {
         secondary: "#dbaabb",
         tertiary: "#27374d",
       },
+      keyframes: {
+        scrollKF: {
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            transform: "translateX(calc(-100%))",
+          },
+        },
+      },
+      animation: {
+        scroll: "scrollKF 15s linear infinite",
+      },
     },
   },
   darkMode: "class",
