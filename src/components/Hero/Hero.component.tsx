@@ -11,7 +11,7 @@ import { Button, Card, Image } from "@nextui-org/react";
 
 export default function Hero() {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 pt-4 bg-background h gap-x-2">
+    <section className="grid grid-cols-1 lg:grid-cols-2 py-5 bg-background h gap-x-2">
       <div className=" flex flex-col col-span-1 min-h-[calc(100vh-6rem)] justify-center">
         <h2 className="text-5xl font-extrabold text-center lg:text-left text-pretty">
           STUDENT-RUN APPLIED SCIENCE CLUB! 👋
