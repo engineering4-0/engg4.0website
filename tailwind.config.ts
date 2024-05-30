@@ -10,10 +10,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#f9f5f6",
-        primary: "#6d8b74",
-        secondary: "#dbaabb",
+        background: "#EEEEEE",
+        primary: "#615EFC",
+        secondary: "#D1D8C5",
         tertiary: "#27374d",
+        onBackground: "#023047",
+        onPrimary: "#EEEEEE"
       },
       keyframes: {
         scrollKF: {
