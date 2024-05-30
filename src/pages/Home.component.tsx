@@ -1,3 +1,4 @@
+import EventGallery from "../components/EventGallery/EventGallery.component";
 import Hero from "../components/Hero/Hero.component";
 import Marquee from "../components/Marquee/Marquee.component";
 import Navbar from "../components/Navbar/Navbar.component";
@@ -13,8 +14,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div className="flex bg-background justify-center overflow-hidden">
-        <div className="px-8 2xl:px-6 max-w-[1536px]">
+      <div className="overflow-x-hidden">
           <Hero />
           <Marquee
             textList={textList}
@@ -25,8 +25,8 @@ function Home() {
             textList={textList2}
             rotationClass={"-rotate-3"}
           />
+          <EventGallery />
         </div>
-      </div>
     </>
   );
 }
