@@ -1,6 +1,6 @@
 import Hero from "../components/Hero/Hero.component";
 import Marquee from "../components/Marquee/Marquee.component";
-import Navbar from "../components/Navbar/Nav.component";
+import Navbar from "../components/Navbar/Navbar.component";
 import Team from "../components/Team/Team.component";
 
 function Home() {
