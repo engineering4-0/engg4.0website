@@ -19,6 +19,9 @@ module.exports = {
         onBackground: "#023047",
         onSurface: "#023047"
       },
+      gridTemplateRows: {
+        'repeat-3-250': 'repeat(3, 250px)',
+      },
       keyframes: {
         scrollKF: {
           "0%": { transform: "translateX(0)" },
