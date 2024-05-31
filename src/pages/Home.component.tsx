@@ -1,4 +1,5 @@
 import EventGallery from "../components/EventGallery/EventGallery.component";
+import Footer from "../components/Footer/Footer.component";
 import Hero from "../components/Hero/Hero.component";
 import Marquee from "../components/Marquee/Marquee.component";
 import Navbar from "../components/Navbar/Navbar.component";
@@ -15,18 +16,19 @@ function Home() {
     <>
       <Navbar />
       <div className="overflow-x-hidden">
-          <Hero />
-          <Marquee
-            textList={textList}
-            rotationClass={"rotate-3"}
-          />
-          <Team />
-          <Marquee
-            textList={textList2}
-            rotationClass={"-rotate-3"}
-          />
-          <EventGallery />
-        </div>
+        <Hero />
+        <Marquee
+          textList={textList}
+          rotationClass={"rotate-3"}
+        />
+        <Team />
+        <Marquee
+          textList={textList2}
+          rotationClass={"-rotate-3"}
+        />
+        <EventGallery />
+      </div>
+      <Footer />
     </>
   );
 }
