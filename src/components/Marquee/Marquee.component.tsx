@@ -1,15 +1,15 @@
 import { Fragment } from "react";
 
-interface Marquee {
+interface IMarquee {
   textList: string[];
   rotationClass: string;
 }
 
-export default function Marquee(props: Marquee): JSX.Element {
+export default function Marquee(props: IMarquee): JSX.Element {
   return (
-    <div className="relative flex items-center h-56 overflow-hidden">
+    <div className="relative flex items-center h-44 overflow-hidden my-6">
       <div
-        className={`absolute border-4 border-primary -left-60 ${props.rotationClass} w-[200%] h-fit flex overflow-hidden top-[48%]`}
+        className={`absolute border-4 border-primary -left-60 ${props.rotationClass} w-[200%] h-fit flex overflow-hidden`}
       >
         {[1, 2, 3, 4].map((value) => (
           <div
