@@ -16,7 +16,7 @@ module.exports = {
         secondary: "#D1D8C5",
         tertiary: "#27374d",
         onPrimary: "#EEEEEE",
-        onBackground: "#023047",
+        onBackground: "#373A40",
         onSurface: "#023047",
         linkedin: "#0a66c2",
         instagram: "#f60078",

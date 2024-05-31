@@ -15,19 +15,17 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div className="overflow-x-hidden">
-        <Hero />
-        <Marquee
-          textList={textList}
-          rotationClass={"rotate-3"}
-        />
-        <Team />
-        <Marquee
-          textList={textList2}
-          rotationClass={"-rotate-3"}
-        />
-        <EventGallery />
-      </div>
+      <Hero />
+      <Marquee
+        textList={textList}
+        rotationClass={"rotate-3"}
+      />
+      <Team />
+      <Marquee
+        textList={textList2}
+        rotationClass={"-rotate-3"}
+      />
+      <EventGallery />
       <Footer />
     </>
   );
