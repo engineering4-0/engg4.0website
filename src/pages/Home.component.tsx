@@ -17,12 +17,12 @@ function Home() {
       <Hero />
       <Marquee
         textList={textList}
-        rotationClass={"rotate-3"}
+        rotationClass={"rotate-3 top-20"}
       />
       <Team />
       <Marquee
         textList={textList2}
-        rotationClass={"-rotate-3"}
+        rotationClass={"-rotate-3 top-10"}
       />
       <EventGallery />
     </>
