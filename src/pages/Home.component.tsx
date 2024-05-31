@@ -14,7 +14,6 @@ function Home() {
   ];
   return (
     <>
-      <Navbar />
       <Hero />
       <Marquee
         textList={textList}
@@ -26,7 +25,6 @@ function Home() {
         rotationClass={"-rotate-3"}
       />
       <EventGallery />
-      <Footer />
     </>
   );
 }
