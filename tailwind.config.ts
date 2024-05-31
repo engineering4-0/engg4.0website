@@ -12,12 +12,16 @@ module.exports = {
       colors: {
         background: "#EEEEEE",
         surface: "#f8f9fa",
-        primary: "#615EFC",
+        primary: "#BEADFA",
         secondary: "#D1D8C5",
         tertiary: "#27374d",
         onPrimary: "#EEEEEE",
         onBackground: "#023047",
-        onSurface: "#023047"
+        onSurface: "#023047",
+        linkedin: "#0a66c2",
+        instagram: "#f60078",
+        discord: "#5865F2",
+        github: "#333"
       },
       gridTemplateRows: {
         'repeat-3-250': 'repeat(3, 250px)',
