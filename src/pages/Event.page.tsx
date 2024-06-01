@@ -2,7 +2,6 @@ import React from "react";
 import { Fragment } from "react";
 import { MdBorderColor } from "react-icons/md";
 import { SlEvent } from "react-icons/sl";
-// import "./EventsPage.css";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
