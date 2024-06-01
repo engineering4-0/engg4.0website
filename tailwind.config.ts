@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         background: "#EEEEEE",
         surface: "#f8f9fa",
-        primary: "#BEADFA",
+        primary: "#8c6ef7",
         secondary: "#D1D8C5",
         tertiary: "#27374d",
         onPrimary: "#EEEEEE",
