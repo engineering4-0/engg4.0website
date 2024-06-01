@@ -10,7 +10,7 @@ const MEMBERS = [
   {
     id: 1,
     name: "Abishek",
-    img: "/engg4.0website/images/teamMembers/Abishek.jpg",
+    img: "/images/teamMembers/Abishek.jpg",
     role: "President",
     linkedIn: "https://www.linkedin.com/in/abishekbr1/",
     instagram: "",
@@ -20,7 +20,7 @@ const MEMBERS = [
   {
     id: 2,
     name: "Divya",
-    img: "/engg4.0website/images/teamMembers/Divya.webp",
+    img: "/images/teamMembers/Divya.webp",
     role: "Vice President",
     linkedIn: "https://www.linkedin.com/in/divya-khurana-7331ba261/",
     instagram: "",
@@ -30,7 +30,7 @@ const MEMBERS = [
   {
     id: 3,
     name: "Sockalingam",
-    img: "/engg4.0website/images/teamMembers/Sockalingam.jpg",
+    img: "/images/teamMembers/Sockalingam.jpg",
     role: "Treasurer",
     linkedIn: "https://www.linkedin.com/in/sockalingam-saravanan-341a9a193/",
     instagram: "",
@@ -40,7 +40,7 @@ const MEMBERS = [
   {
     id: 4,
     name: "Thiruvikraman",
-    img: "/engg4.0website/images/teamMembers/Vikram.webp",
+    img: "/images/teamMembers/Vikram.webp",
     role: "Operations Head",
     linkedIn: "https://www.linkedin.com/in/thiruvikraman-s/",
     instagram: "",
@@ -50,7 +50,7 @@ const MEMBERS = [
   {
     id: 5,
     name: "Ameya",
-    img: "/engg4.0website/images/teamMembers/Ameya.jpg",
+    img: "/images/teamMembers/Ameya.jpg",
     role: "Technical Head",
     linkedIn: "https://www.linkedin.com/in/ameya-ade-833a16146/",
     instagram: "",
@@ -60,7 +60,7 @@ const MEMBERS = [
   {
     id: 6,
     name: "Aeshita Dhiman",
-    img: "/engg4.0website/images/teamMembers/Aeshita.jpg",
+    img: "/images/teamMembers/Aeshita.jpg",
     role: "Digital Marketing Head",
     linkedIn: "",
     instagram: "",
