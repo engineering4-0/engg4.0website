@@ -1,6 +1,6 @@
 // import emailjs from "@emailjs/browser";
 // import axios from "axios";
-import { Button } from '@nextui-org/react';
+import { Button } from '@nextui-org/react'
 
 const Registration = () => {
   // const scriptUrl = process.env.REACT_APP_FIREBASE_USER_DATABASE;
@@ -27,11 +27,11 @@ const Registration = () => {
   //     );
   // };
   const handleSubmit = (e: React.BaseSyntheticEvent) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    const fd = new FormData(e.target);
-    const data = Object.fromEntries(fd.entries());
-    console.log(data);
+    const fd = new FormData(e.target)
+    const data = Object.fromEntries(fd.entries())
+    console.log(data)
     // axios
     // .get(scriptUrl, {
     //   params: {
@@ -51,8 +51,8 @@ const Registration = () => {
     //   console.log(err);
     // });
 
-    e.target.reset();
-  };
+    e.target.reset()
+  }
 
   // const registerUser = async () => {
   //   await axios
@@ -153,7 +153,7 @@ const Registration = () => {
         </div>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Registration;
+export default Registration
