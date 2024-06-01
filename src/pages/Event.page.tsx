@@ -1,6 +1,6 @@
 import React from 'react'
 import { Fragment } from "react";
-// import { SlEvent } from "react-icons/sl";
+import { SlEvent } from "react-icons/sl";
 // import "./EventsPage.css";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
@@ -57,7 +57,7 @@ export default function Event() {
   ];
   return (
 <div className="container mx-auto">
-      <h1 className="text-center text-5xl">Past Events</h1>
+      <h1 className="text-center text-5xl text-onBackground">Past Events</h1>
       <div className="mb-12 mt-8">
         <VerticalTimeline lineColor="">
           {pastEvents.map((event) => {
@@ -67,7 +67,7 @@ export default function Event() {
                   contentStyle={{ background: "#f3f4f6", borderRadius: "1rem", boxShadow: "none" }}
                   contentArrowStyle={{ borderRight: "0.4rem solid #9ca3af" }}
                   date={event.time}
-                  // icon={<SlEvent />}
+                  icon={<SlEvent />}
                   iconStyle={{ background: "#fff", fontSize: "1.5rem" }}
                 >
                   <div className=" flex flex-col items-center justify-center text-center">
@@ -76,9 +76,9 @@ export default function Event() {
                       src={event.images[0]}
                       alt="event"
                     />
-                    <h3 className="mt-4 text-2xl">{event.title}</h3>
-                    <p className="!my-1 !text-xs !text-slate-600">{event.location}</p>
-                    <p className="!text-sm">{event.description}</p>
+                    <h3 className="mt-4 text-2xl text-onSurface">{event.title}</h3>
+                    <p className="!my-1 !text-xs !text-onSurface">{event.location}</p>
+                    <p className="!text-sm text-onSurface">{event.description}</p>
                   </div>
                 </VerticalTimelineElement>
               </Fragment>
