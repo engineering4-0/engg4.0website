@@ -1,6 +1,6 @@
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
-import img from "/Event1.jpeg";
+import Event from "/images/events/Event1.jpeg";
 
 const AboutUs = () => {
   return (
@@ -25,7 +25,7 @@ const AboutUs = () => {
             </li>
           </ul>
         </div>
-        <img src={img} alt="engineering 4.0 event" className="w-full max-w-sm rounded-xl shadow-lg" />
+        <img src={Event} alt="engineering 4.0 event" className="w-full max-w-sm rounded-xl shadow-lg" />
       </div>
       <p className="mt-3 text-center text-onBackground">Embark on a journey of growth and connection with Engineering Club 4.0!</p>
       <div className="flex w-full justify-center">

@@ -8,10 +8,10 @@ TODO:
 
 import { Button } from "@nextui-org/react";
 import HeroPhotoCard from "./HeroPhotoCard.component";
-import event1 from "../../assets/Event1.jpeg"
-import event2 from "../../assets/Event2.jpeg"
-import event3 from "../../assets/Event3.jpeg"
-import event4 from "../../assets/Event4.jpeg"
+import event1 from "/images/events/Event1.jpeg"
+import event2 from "/images/events/Event2.jpeg"
+import event3 from "/images/events/Event3.jpeg"
+import event4 from "/images/events/Event4.jpeg"
 import HeroMembers from "./HeroMembers.component";
 
 export default function Hero() {

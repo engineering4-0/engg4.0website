@@ -1,11 +1,11 @@
-import Event1 from "../../assets/Event1.jpeg";
-import Event4 from "../../assets/Event4.jpeg";
-import Event6 from "../../assets/Event6.jpeg";
-import Event7 from "../../assets/Event7.jpeg";
-import Event8 from "../../assets/Event8.jpg";
-import Event9 from "../../assets/Event9.jpg";
-import Event10 from "../../assets/Event10.jpg";
-import Event11 from "../../assets/Event11.jpg";
+import Event1 from "/images/events/Event1.jpeg";
+import Event4 from "/images/events/Event4.jpeg";
+import Event6 from "/images/events/Event6.jpeg";
+import Event7 from "/images/events/Event7.jpeg";
+import Event8 from "/images/events/Event8.jpg";
+import Event9 from "/images/events/Event9.jpg";
+import Event10 from "/images/events/Event10.jpg";
+import Event11 from "/images/events/Event11.jpg";
 
 const EventGallery = () => {
   return (
