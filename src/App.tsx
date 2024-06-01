@@ -20,7 +20,11 @@ import Footer from './components/Footer/Footer.component'
 =======
 import AdminGuard from './guards/AdminGuard.component'
 import Admin from './pages/Admin.page'
+<<<<<<< HEAD
 >>>>>>> 057c332 (added admin flow and firebase hook)
+=======
+import RegistrationPage from './pages/Registration.page'
+>>>>>>> 9feda85 (Migrated registration page)
 
 function App() {
   return (
@@ -35,9 +39,13 @@ function App() {
             <Route path="" element={<Admin />}></Route>
           </Route>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <Route path="/register" element={<RegistrationPage />}></Route>
 =======
 >>>>>>> 057c332 (added admin flow and firebase hook)
+=======
+          <Route path="/register" element={<RegistrationPage />}></Route>
+>>>>>>> 9feda85 (Migrated registration page)
         </Routes>
         <Footer />
       </HashRouter>
