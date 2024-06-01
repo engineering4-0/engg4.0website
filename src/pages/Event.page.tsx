@@ -34,7 +34,6 @@ export default function Event() {
         }
     `
       );
-      console.log(events);
       setEvents(events);
     };
 
