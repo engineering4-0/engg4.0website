@@ -1,12 +1,12 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home.page';
-import About from './pages/About.page';
-import Event from './pages/Event.page';
-import Navbar from './components/Navbar/Navbar.component';
-import Footer from './components/Footer/Footer.component';
-import AdminGuard from './guards/AdminGuard.component';
-import Admin from './pages/Admin.page';
-import RegistrationPage from './pages/Registration.page';
+import { HashRouter, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home.page'
+import About from './pages/About.page'
+import Event from './pages/Event.page'
+import Navbar from './components/Navbar/Navbar.component'
+import Footer from './components/Footer/Footer.component'
+import AdminGuard from './guards/AdminGuard.component'
+import Admin from './pages/Admin.page'
+import RegistrationPage from './pages/Registration.page'
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <Footer />
       </HashRouter>
     </div>
-  );
+  )
 }
 
 export default App
