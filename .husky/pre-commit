@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+bun x lint-staged#!/usr/bin/env sh
+
 bun run pre-commit
