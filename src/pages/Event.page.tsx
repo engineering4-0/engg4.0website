@@ -1,5 +1,4 @@
-import React from "react";
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 import { MdBorderColor } from "react-icons/md";
 import { SlEvent } from "react-icons/sl";
 import {
@@ -8,8 +7,16 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
+interface EventDetails {
+  images: string[];
+  title: string;
+  location: string;
+  time: string;
+  description: string;
+}
+
 export default function Event() {
-  const pastEvents = [
+  const pastEvents: EventDetails[] = [
     {
       images: ["/images/events/Event1.jpeg"],
       title: "Club Day!",
@@ -51,41 +58,39 @@ export default function Event() {
         "The Club Showcase Day is an event conducted with the Windsor Engineering Society from the University of Windsor. The event showcased six student clubs from the University to both Undergraduate and Graduate Students. The students participated in a giveaway raffle to win goodies, learn what the club is about, and apply for possible hirings",
     },
   ];
+
   return (
     <div className="container mx-auto">
       <h1 className="text-center text-5xl text-onBackground">Past Events</h1>
       <div className="mb-12 mt-8">
         <VerticalTimeline lineColor="#BEADFA">
-          {pastEvents.map((event) => {
-            return (
-              <Fragment key={event.title}>
-                <VerticalTimelineElement
-                  contentStyle={{
-                    background: "#f3f4f6",
-                    borderColor: "#BEADFA",
-                    border: "1rem"
-                    
-                  }}
-                  contentArrowStyle={{ borderRight: "0.4rem solid", color:"#BEADFA" }}
-                  date={event.time}
-                  dateClassName="dateClass"
-                  icon={<SlEvent />}
-                  iconStyle={{ background: "#fff", fontSize: "1.5rem", color:"#BEADFA" }}
-                >
-                  <div className=" flex flex-col items-center justify-center text-cente">
-                    <img
-                      className="aspect-video w-full max-w-lg rounded-lg object-cover border-8 border-primary"
-                      src={event.images[0]}
-                      alt="event"
-                    />
-                    <h3 className="mt-4 text-2xl text-onSurface">{event.title}</h3>
-                    <p className="!my-1 !text-xs !text-onSurface">{event.location}</p>
-                    <p className="!text-sm text-onSurface">{event.description}</p>
-                  </div>
-                </VerticalTimelineElement>
-              </Fragment>
-            );
-          })}
+          {pastEvents.map((event) => (
+            <Fragment key={event.title}>
+              <VerticalTimelineElement
+                contentStyle={{
+                  background: "#f3f4f6",
+                  borderColor: "#BEADFA",
+                  border: "1rem"
+                }}
+                contentArrowStyle={{ borderRight: "0.4rem solid", color: "#BEADFA" }}
+                date={event.time}
+                dateClassName="dateClass"
+                icon={<SlEvent />}
+                iconStyle={{ background: "#fff", fontSize: "1.5rem", color: "#BEADFA" }}
+              >
+                <div className="flex flex-col items-center justify-center text-center">
+                  <img
+                    className="aspect-video w-full max-w-lg rounded-lg object-cover border-8 border-primary"
+                    src={event.images[0]}
+                    alt="event"
+                  />
+                  <h3 className="mt-4 text-2xl text-onSurface">{event.title}</h3>
+                  <p className="!my-1 !text-xs !text-onSurface">{event.location}</p>
+                  <p className="!text-sm text-onSurface">{event.description}</p>
+                </div>
+              </VerticalTimelineElement>
+            </Fragment>
+          ))}
         </VerticalTimeline>
       </div>
     </div>
