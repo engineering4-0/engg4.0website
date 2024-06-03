@@ -12,7 +12,8 @@
     "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pre-commit": "tsc && lint-staged"
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.10",
@@ -48,13 +49,10 @@
     "typescript": "^5.2.2",
     "vite": "^5.1.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "*.{ts,js,tsx,jsx}": "eslint --cache --fix",
-    "*.{ts,js,css,md,tsx,jsx}": "prettier --write"
+    "**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint **/*.js --fix-dry-run"
+    ]
   }
 }
