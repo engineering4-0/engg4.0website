@@ -1,11 +1,3 @@
-import React from "react";
-
-// TODO:
-/*
-
-This list should go in firebase.
-
-*/
 const MEMBERS = [
   {
     id: 1,
