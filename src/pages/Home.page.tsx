@@ -1,15 +1,15 @@
-import EventGallery from '../components/EventGallery/EventGallery.component';
-import Hero from '../components/Hero/Hero.component';
-import Marquee from '../components/Marquee/Marquee.component';
-import Team from '../components/Team/Team.component';
+import EventGallery from '../components/EventGallery/EventGallery.component'
+import Hero from '../components/Hero/Hero.component'
+import Marquee from '../components/Marquee/Marquee.component'
+import Team from '../components/Team/Team.component'
 
 function Home() {
-  const textList = ['Web-Development', 'Finance', 'Operations', 'Social Media'];
+  const textList = ['Web-Development', 'Finance', 'Operations', 'Social Media']
   const textList2 = [
     'Game-Night',
     'Industrial-Connect',
-    '3D-Modeling-Workshops',
-  ];
+    '3D-Modeling-Workshops'
+  ]
   return (
     <>
       <Hero />
@@ -18,7 +18,7 @@ function Home() {
       <Marquee textList={textList2} rotationClass={'-rotate-3 top-10'} />
       <EventGallery />
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home
