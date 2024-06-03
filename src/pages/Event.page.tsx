@@ -1,5 +1,4 @@
-import React, { Fragment } from "react";
-import { MdBorderColor } from "react-icons/md";
+import { Fragment } from "react";
 import { SlEvent } from "react-icons/sl";
 import {
   VerticalTimeline,
