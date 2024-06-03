@@ -1,5 +1,5 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home.component";
+import Home from "./pages/Home.page";
 import About from "./pages/About.page";
 import Event from "./pages/Event.page";
 import Navbar from "./components/Navbar/Navbar.component";
