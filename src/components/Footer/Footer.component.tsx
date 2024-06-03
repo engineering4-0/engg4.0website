@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
+
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import waveSvg from "../../assets/wave.svg"
 import Wave from "./Wave.component";
 
 const Footer = () => {

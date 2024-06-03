@@ -1,4 +1,3 @@
-// import React from "react";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 interface ITeamCard {

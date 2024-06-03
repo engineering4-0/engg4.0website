@@ -1,11 +1,3 @@
-/*
-TODO:
-
-1.) Images will be taken from firebase.
-2.) Consistent theme and sizing.
-
-*/
-
 import { Button } from "@nextui-org/react";
 import HeroPhotoCard from "./HeroPhotoCard.component";
 import event1 from "/images/events/Event1.jpeg"
