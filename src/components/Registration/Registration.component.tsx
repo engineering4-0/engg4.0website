@@ -1,5 +1,6 @@
 // import emailjs from "@emailjs/browser";
 // import axios from "axios";
+import { Button } from '@nextui-org/react';
 
 const Registration = () => {
   // const scriptUrl = process.env.REACT_APP_FIREBASE_USER_DATABASE;
@@ -138,10 +139,16 @@ const Registration = () => {
             />
           </div>
           <div className="mt-4 flex gap-4">
-            <button type="reset" className="btn-primary">
+            <Button type="reset" className="text-lg px-5 py-4">
               Reset
-            </button>
-            <button className="btn-accent">Submit</button>
+            </Button>
+            <Button
+              className="text-lg px-5 py-4 text-onPrimary"
+              color="primary"
+              type="submit"
+            >
+              Submit
+            </Button>
           </div>
         </div>
       </form>
