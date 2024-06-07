@@ -13,8 +13,6 @@
   "requirePragma": false,
   "quoteProps": "as-needed",
   "trailingComma": "none",
-  "eslintIntegration": true,
-  "parser": "babel",
   "jsxSingleQuote": false,
   "vueIndentScriptAndStyle": false
 }

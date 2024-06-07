@@ -6,10 +6,14 @@
   },
   "extends": [
     "airbnb-base",
-    "prettier",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "prettier"
   ],
   "ignorePatterns": [
     "dist",
@@ -17,10 +21,15 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "plugins": [
     "prettier",
+    "react",
+    "react-hooks",
     "react-refresh"
   ],
   "rules": {
@@ -42,6 +51,12 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
