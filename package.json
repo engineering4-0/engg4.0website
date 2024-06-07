@@ -1,6 +1,6 @@
 {
   "name": "engg4.0_website",
-  "description": "The official website of Engineering4.0 Club at Univeristy of Windsor.",
+  "description": "The official website of Engineering4.0 Club at University of Windsor.",
   "private": true,
   "version": "0.0.1",
   "homepage": "https://engineering4-0.github.io/engg4.0website/",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.10",
+    "firebase": "^10.12.2",
     "framer-motion": "^11.0.8",
     "gh-pages": "^6.1.1",
     "react": "^18.2.0",
@@ -53,7 +54,7 @@
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
       "prettier --write",
-      "eslint **/*.js --fix-dry-run"
+      "eslint --fix"
     ]
   }
 }

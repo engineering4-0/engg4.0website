@@ -26,3 +26,10 @@ jobs:
           user_email: "github-actions[bot]@users.noreply.github.com"
           github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           repository: ${{ github.repository }}
+          firebase_apiKey: ${{secrets.FIREBASE_APIKEY}}
+          firebase_authDomain: ${{vars.FIREBASE_AUTHDOMAIN}}
+          firebase_projectId: ${{vars.FIREBASE_PROJECTID}}
+          firebase_storageBucket: ${{vars.FIREBASE_STORAGEBUCKET}}
+          firebase_messagingSenderId: ${{vars.FIREBASE_MESSAGINGSENDERID}}
+          firebase_appId: ${{vars.FIREBASE_APPID}}
+          firebase_measurementId: ${{vars.FIREBASE_MEASUREMENTID}}
