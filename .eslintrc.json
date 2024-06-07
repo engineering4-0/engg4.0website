@@ -16,10 +16,7 @@
     "plugin:import/typescript",
     "prettier"
   ],
-  "ignorePatterns": [
-    "dist",
-    ".eslintrc.json"
-  ],
+  "ignorePatterns": ["dist", ".eslintrc.json"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json",
@@ -28,12 +25,7 @@
       "jsx": true
     }
   },
-  "plugins": [
-    "prettier",
-    "react",
-    "react-hooks",
-    "react-refresh"
-  ],
+  "plugins": ["prettier", "react", "react-hooks", "react-refresh"],
   "rules": {
     "react-refresh/only-export-components": [
       "warn",
@@ -41,9 +33,7 @@
         "allowConstantExport": true
       }
     ],
-    "prettier/prettier": [
-      "error"
-    ],
+    "prettier/prettier": ["error"],
     "import/extensions": [
       "error",
       "ignorePackages",
