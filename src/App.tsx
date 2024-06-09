@@ -15,7 +15,12 @@ import About from './pages/About.page'
 import Event from './pages/Event.page'
 import Navbar from './components/Navbar/Navbar.component'
 import Footer from './components/Footer/Footer.component'
+<<<<<<< HEAD
 >>>>>>> 5259692 (firebase initial setup)
+=======
+import AdminGuard from './guards/AdminGuard.component'
+import Admin from './pages/Admin.page'
+>>>>>>> 057c332 (added admin flow and firebase hook)
 
 function App() {
   return (
@@ -29,7 +34,10 @@ function App() {
           <Route path="/admin" element={<AdminGuard />}>
             <Route path="" element={<Admin />}></Route>
           </Route>
+<<<<<<< HEAD
           <Route path="/register" element={<RegistrationPage />}></Route>
+=======
+>>>>>>> 057c332 (added admin flow and firebase hook)
         </Routes>
         <Footer />
       </HashRouter>
