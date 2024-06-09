@@ -20,10 +20,6 @@ function App() {
           <Route path="/admin" element={<AdminGuard />}>
             <Route path="" element={<Admin />}></Route>
           </Route>
-          <Route path="/events" element={<Event />}></Route>
-          <Route path="/admin" element={<AdminGuard />}>
-            <Route path="" element={<Admin />}></Route>
-          </Route>
           <Route path="/register" element={<RegistrationPage />}></Route>
         </Routes>
         <Footer />
