@@ -9,7 +9,7 @@ import Admin from './pages/Admin.page'
 
 function App() {
   return (
-    <div className="bg-background">
+    <div className="bg-background flex flex-col">
       <HashRouter>
         <Navbar />
         <Routes>
