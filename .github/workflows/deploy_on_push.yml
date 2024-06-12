@@ -2,7 +2,7 @@ name: deploy_on_push
 run-name: ${{ github.actor }} is executed this action.
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
 jobs:
   build_deploy_gh-pages:
     runs-on: ubuntu-latest
