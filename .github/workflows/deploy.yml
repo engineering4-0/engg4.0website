@@ -39,6 +39,8 @@ jobs:
         run: bun install
       - name: Build
         run: bun run build
+        env:
+          FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
