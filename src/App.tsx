@@ -10,7 +10,7 @@ import RegistrationPage from './pages/Registration.page'
 
 function App() {
   return (
-    <div className="bg-background">
+    <div className="bg-background flex flex-col">
       <HashRouter>
         <Navbar />
         <Routes>

@@ -7,20 +7,18 @@ import {
   deleteDoc,
   doc,
   DocumentData,
-  getFirestore
+  getFirestore,
+  FirestoreError
 } from 'firebase/firestore'
 import FirebaseAppService from '../services/FirebaseApp.service'
 
-type FirestoreError = {
-  message: string
-}
-
-const useFirestore = (collectionName: string) => {
-  const [data, setData] = useState<DocumentData[]>([])
+const useFirestore = <T extends DocumentData>(collectionName: string) => {
+  const [data, setData] = useState<T[]>([])
   const [loading, setLoading] = useState<boolean>(false)
-  const [error, setError] = useState<FirestoreError | null>(null)
+  const [error, setError] = useState<FirestoreError | null | unknown>(null)
   const firebaseAppInstance = FirebaseAppService.getFirebaseAppInstance()
   const db = getFirestore(firebaseAppInstance)
+
   const fetchData = useCallback(async () => {
     setLoading(true)
     try {
@@ -28,36 +26,40 @@ const useFirestore = (collectionName: string) => {
       const docsData = querySnapshot.docs.map(document => ({
         id: document.id,
         ...document.data()
-      }))
+      })) as unknown as T[]
       setData(docsData)
     } catch (err) {
-      setError({ message: (err as Error).message })
+      if (err instanceof FirestoreError) {
+        setError(err)
+      } else {
+        setError(err)
+      }
     } finally {
       setLoading(false)
     }
   }, [collectionName, db])
 
   const addDocument = useCallback(
-    async (newData: DocumentData) => {
+    async (newData: T) => {
       setLoading(true)
       try {
-        const docRef = await addDoc(collection(db, collectionName), newData)
-        setData(prevData => [...prevData, { id: docRef.id, ...newData }])
+        await addDoc(collection(db, collectionName), newData)
+        fetchData()
       } catch (err) {
         setError({ message: (err as Error).message })
       } finally {
         setLoading(false)
       }
     },
-    [collectionName, db]
+    [collectionName, db, fetchData]
   )
 
   const updateDocument = useCallback(
-    async (id: string, updatedData: DocumentData) => {
+    async (id: string, updatedData: Partial<T>) => {
       setLoading(true)
       try {
         const docRef = doc(db, collectionName, id)
-        await updateDoc(docRef, updatedData)
+        await updateDoc(docRef, updatedData as DocumentData)
         setData(prevData =>
           prevData.map(item =>
             item.id === id ? { ...item, ...updatedData } : item
