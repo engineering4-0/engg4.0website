@@ -49,7 +49,7 @@ interface ITeamMember {
 
 const Admin: React.FC = () => {
   const { data, addDocument } = useFirestore<ITeamMember>('TeamMember')
-  const { imageUrl, uploadImage } = useUploadImage()
+  const { uploadImage } = useUploadImage()
   const { isOpen, onOpen, onClose, onOpenChange } = useDisclosure()
 
   const [memberToAdd, setMemberToAdd] = useState<ITeamMember>({
@@ -70,11 +70,16 @@ const Admin: React.FC = () => {
     useState<string>('')
 
   const addOrUpdateMember = async () => {
+    let imgUrl = ''
     if (profileImageBlob) {
-      await uploadImage(profileImageBlob, 'teamMembers', memberToAdd.email)
+      imgUrl = await uploadImage(
+        profileImageBlob,
+        'teamMembers',
+        memberToAdd.email
+      )
     }
     // console.log({ ...memberToAdd, imageUrl })
-    await addDocument({ ...memberToAdd, imageUrl })
+    await addDocument({ ...memberToAdd, imageUrl: imgUrl })
 
     onClose()
   }

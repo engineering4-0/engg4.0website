@@ -6,7 +6,11 @@ interface UseUploadImage {
   uploading: boolean
   uploadError: Error | null
   imageUrl: string | null
-  uploadImage: (file: File, basePath: string, fileName: string) => Promise<void>
+  uploadImage: (
+    file: File,
+    basePath: string,
+    fileName: string
+  ) => Promise<string>
 }
 
 const useUploadImage = (): UseUploadImage => {
@@ -18,7 +22,7 @@ const useUploadImage = (): UseUploadImage => {
     file: File,
     basePath: string,
     fileName: string
-  ): Promise<void> => {
+  ): Promise<string> => {
     setUploading(true)
     setError(null)
     const firebaseAppInstance = FirebaseAppService.getFirebaseAppInstance()
@@ -29,8 +33,10 @@ const useUploadImage = (): UseUploadImage => {
       const snapshot = await uploadBytes(storageRef, file)
       const url = await getDownloadURL(snapshot.ref)
       setImageUrl(url)
+      return url
     } catch (err) {
       setError(err as Error)
+      return ''
     } finally {
       setUploading(false)
     }
