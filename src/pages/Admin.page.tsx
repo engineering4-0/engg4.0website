@@ -66,8 +66,9 @@ const Admin: React.FC = () => {
   const [profileImageBlob, setProfileImageBlob] = useState<File | undefined>(
     undefined
   )
-  const [profileImagePreviewUrl, setProfileImagePreviewUrl] =
-    useState<string>('')
+  const [profileImagePreviewUrl, setProfileImagePreviewUrl] = useState<string>(
+    'https://media.istockphoto.com/id/1451587807/vector/user-profile-icon-vector-avatar-or-person-icon-profile-picture-portrait-symbol-vector.jpg?s=612x612&w=0&k=20&c=yDJ4ITX1cHMh25Lt1vI1zBn2cAKKAlByHBvPJ8gEiIg='
+  )
 
   const addOrUpdateMember = async () => {
     let imgUrl = ''
@@ -157,7 +158,7 @@ const Admin: React.FC = () => {
                   src={profileImagePreviewUrl}
                   width={200}
                 />
-                <CardFooter>
+                <CardFooter className="absolute z-10">
                   <Button isIconOnly aria-label="Profile Image">
                     <label htmlFor="profileImage">
                       <FaPen />
@@ -197,9 +198,14 @@ const Admin: React.FC = () => {
                   'President',
                   'Vice President',
                   'Treasurer',
-                  'Operations Head',
-                  'Technical Head',
-                  'Digital Marketing Head'
+                  'Operations Team Head',
+                  'Technical Team Head',
+                  'Digital Marketing Team Head',
+                  'Content Creator Team Head',
+                  'Operations Team Member',
+                  'Technical Team Member',
+                  'Digital Marketing Team Member',
+                  'Content Creator Team Member'
                 ].map(position => (
                   <SelectItem key={position} value={position}>
                     {position}
