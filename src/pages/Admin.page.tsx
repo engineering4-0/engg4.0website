@@ -86,7 +86,9 @@ const Admin: React.FC = () => {
   }
 
   const processEmail = (email: string): string =>
-    email.endsWith('@gmail.com') ? email : `${email.split('@')[0]}@gmail.com`
+    email.endsWith('@uwindsor.ca')
+      ? email
+      : `${email.split('@')[0]}@uwindsor.ca`
 
   const profileImageHandler = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
