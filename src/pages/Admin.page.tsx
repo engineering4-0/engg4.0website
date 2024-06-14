@@ -85,6 +85,9 @@ const Admin: React.FC = () => {
     onClose()
   }
 
+  const processEmail = (email: string): string =>
+    email.endsWith('@gmail.com') ? email : `${email.split('@')[0]}@gmail.com`
+
   const profileImageHandler = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
     if (file) {
@@ -227,7 +230,7 @@ const Admin: React.FC = () => {
                 onChange={e =>
                   setMemberToAdd(prevState => ({
                     ...prevState,
-                    email: e.target.value
+                    email: processEmail(e.target.value)
                   }))
                 }
                 isRequired
