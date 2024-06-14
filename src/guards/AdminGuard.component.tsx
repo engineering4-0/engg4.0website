@@ -8,7 +8,7 @@ const AdminGuard = () => {
   const [isPasswordInvalid, setisPasswordInvalid] = useState(false)
 
   const handlePromptPassword = () => {
-    if (password === 'password') {
+    if (password === 'engineering4.0admin') {
       setLoggedIn(true)
     } else {
       setisPasswordInvalid(true)
