@@ -41,6 +41,7 @@ jobs:
         run: bun run build
         env:
           DOTENV_KEY: ${{vars.DOTENV_KEY}}
+          REACT_APP_FIREBASE_API_KEY: ${{vars.REACT_APP_FIREBASE_API_KEY}}
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
