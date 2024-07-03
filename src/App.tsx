@@ -6,12 +6,9 @@ import Navbar from './components/Navbar/Navbar.component'
 import Footer from './components/Footer/Footer.component'
 import AdminGuard from './guards/AdminGuard.component'
 import Admin from './pages/Admin.page'
-import RegistrationPage from './pages/Registration.page'
 
 function App() {
   return (
-    <div className="bg-background flex flex-col">
-      <HashRouter>
     <div className="bg-background flex flex-col">
       <HashRouter>
         <Navbar />
@@ -22,15 +19,11 @@ function App() {
           <Route path="/admin" element={<AdminGuard />}>
             <Route path="" element={<Admin />}></Route>
           </Route>
-          <Route path="/register" element={<RegistrationPage />}></Route>
         </Routes>
         <Footer />
       </HashRouter>
-      </HashRouter>
     </div>
-  )
   )
 }
 
-export default App
 export default App
