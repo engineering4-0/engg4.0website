@@ -1,11 +1,9 @@
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
-import waveSvg from '../../assets/wave.svg'
 import Wave from './Wave.component'
 
 const Footer = () => {
   return (
     <footer className="text-center text-sm">
-      <Wave />
       <Wave />
       <div className="bg-primary px-auto flex max-w-full-md flex-col items-stretch justify-around gap-4 md:flex-row">
         <nav className="my-2">
