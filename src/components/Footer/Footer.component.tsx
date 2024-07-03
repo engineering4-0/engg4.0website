@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <footer className="text-center text-sm">
       <Wave />
+      <Wave />
       <div className="bg-primary px-auto flex max-w-full-md flex-col items-stretch justify-around gap-4 md:flex-row">
         <nav className="my-2">
           <h3 className="mb-2 text-3xl text-background">Social Media Links</h3>

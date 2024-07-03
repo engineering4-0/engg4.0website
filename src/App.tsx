@@ -12,6 +12,8 @@ function App() {
   return (
     <div className="bg-background flex flex-col">
       <HashRouter>
+    <div className="bg-background flex flex-col">
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -24,8 +26,11 @@ function App() {
         </Routes>
         <Footer />
       </HashRouter>
+      </HashRouter>
     </div>
+  )
   )
 }
 
+export default App
 export default App

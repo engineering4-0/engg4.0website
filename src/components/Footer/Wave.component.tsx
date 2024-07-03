@@ -1,4 +1,3 @@
-
 function Wave() {
   return (
     <>
