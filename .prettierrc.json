@@ -8,6 +8,7 @@
   "arrowParens": "avoid",
   "proseWrap": "always",
   "htmlWhitespaceSensitivity": "strict",
+  "jsxBracketSameLine": false,
   "bracketSpacing": true,
   "insertPragma": false,
   "requirePragma": false,
